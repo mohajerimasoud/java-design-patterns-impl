@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3995c29c-4b9a-4087-8be1-e912fe380512" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/app/mohajeri/portfolio/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/app/mohajeri/portfolio/memento/Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/app/mohajeri/portfolio/memento/EditorState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/app/mohajeri/portfolio/memento/History.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/app/mohajeri/portfolio/memento/Memento.java" afterDir="false" />
+    <list default="true" id="3995c29c-4b9a-4087-8be1-e912fe380512" name="Changes" comment="initial commit + memento pattern">
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/app/mohajeri/portfolio/state/Brush.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/app/mohajeri/portfolio/state/Canvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/app/mohajeri/portfolio/state/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/app/mohajeri/portfolio/state/Tool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,12 +44,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Memento">
+  <component name="RunManager" selected="Application.State">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="web.app.mohajeri.portfolio.Main" />
       <module name="DesignPatterns" />
@@ -82,8 +77,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="State" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="web.app.mohajeri.portfolio.state.State" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="web.app.mohajeri.portfolio.state.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.State" />
         <item itemvalue="Application.Memento" />
         <item itemvalue="Application.Main" />
       </list>
@@ -97,8 +106,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665755664700</updated>
-      <workItem from="1665755666214" duration="3525000" />
+      <workItem from="1665755666214" duration="4672000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit + memento pattern">
+      <created>1665759806029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665759806029</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +131,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit + memento pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit + memento pattern" />
   </component>
 </project>
